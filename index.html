@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Connexion</h5>
+                <form class="form-signin">
+                  <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                    <label for="inputEmail">Adresse mail</label>
+                  </div>
+    
+                  <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe" required>
+                    <label for="inputPassword">Mot de passe</label>
+                  </div>
+    
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Se souvenir du mot de passe</label>
+                  </div>
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Connexion</button>
+                  <hr class="my-4">
+                  <a href="pages/signup.html">Pas encore de compte ?</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Librairies-->
+
+    <!-- BOOTSTRAP / JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- FIREBASE -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    // Initialize Firebase
+    firebase.initializeApp({
+        apiKey: "AIzaSyA3zcUjxV79lL3sCUzMKZis1oU2q1KIOPE",
+        authDomain: "fir-app-2faa1.firebaseapp.com",
+        projectId: "fir-app-2faa1",
+        storageBucket: "fir-app-2faa1.appspot.com",
+        messagingSenderId: "1042951779210",
+        appId: "1:1042951779210:web:4b4d78d027462fda26ce73"
+    });
+    </script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
