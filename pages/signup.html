@@ -22,23 +22,23 @@
                             <div class="form-label-group">
                                 <input type="text" id="inputPseudo" class="form-control" placeholder="Votre pseudo"
                                     required autofocus>
-                                <label for="inputEmail">Pseudo</label>
+                                <label for="inputPseudo">Pseudo</label>
                             </div>
 
                             <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Votre adresse mail"
-                                    required autofocus>
+                                <input type="email" id="inputEmail" class="form-control"
+                                    placeholder="Votre adresse mail" required autofocus>
                                 <label for="inputEmail">Adresse mail</label>
                             </div>
 
                             <div class="form-label-group">
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Votre mot de passe"
-                                    required>
+                                <input type="password" id="inputPassword" class="form-control"
+                                    placeholder="Votre mot de passe" required>
                                 <label for="inputPassword">Mot de passe</label>
                             </div>
 
                             <button class="btn btn-lg btn-primary btn-block text-uppercase"
-                                type="submit">Connexion</button>
+                                type="submit">Inscription</button>
                             <hr class="my-4">
                         </form>
                     </div>
@@ -51,28 +51,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
-     <!-- FIREBASE -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- FIREBASE -->
+    <!-- Module firebase élémenaire -->
     <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Liste des SDKS Firebases disponibles
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
+    <!-- Ajout du module firebase d'authentification -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+
     <script>
-    // Your web app's Firebase configuration
-    // Initialize Firebase
-    firebase.initializeApp({
-        apiKey: "AIzaSyA3zcUjxV79lL3sCUzMKZis1oU2q1KIOPE",
-        authDomain: "fir-app-2faa1.firebaseapp.com",
-        projectId: "fir-app-2faa1",
-        storageBucket: "fir-app-2faa1.appspot.com",
-        messagingSenderId: "1042951779210",
-        appId: "1:1042951779210:web:4b4d78d027462fda26ce73"
-    });
+        const firebaseConfig = {
+            apiKey: "AIzaSyA3zcUjxV79lL3sCUzMKZis1oU2q1KIOPE",
+            authDomain: "fir-app-2faa1.firebaseapp.com",
+            projectId: "fir-app-2faa1",
+            storageBucket: "fir-app-2faa1.appspot.com",
+            messagingSenderId: "1042951779210",
+            appId: "1:1042951779210:web:4b4d78d027462fda26ce73"
+        };
+        // Your web app's Firebase configuration
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
     </script>
 
-    <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
 
     <script src="../js/signup.js"></script>
 </body>
